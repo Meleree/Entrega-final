@@ -1,6 +1,8 @@
 html {
   line-height: 1.15;
+  /* 1 */
   -webkit-text-size-adjust: 100%;
+  /* 2 */ }
 
 body {
   margin: 0; }
@@ -14,23 +16,28 @@ h1 {
 
 hr {
   box-sizing: content-box;
+  /* 1 */
   height: 0;
+  /* 1 */
   overflow: visible;
-  }
+  /* 2 */ }
 
 pre {
   font-family: LibreFranklin, sans-serif;
+  /* 1 */
   font-size: 1rem;
-  }
+  /* 2 */ }
 
 a {
   background-color: transparent; }
 
 abbr[title] {
   border-bottom: none;
+  /* 1 */
   text-decoration: underline;
+  /* 2 */
   text-decoration: underline dotted;
-}
+  /* 2 */ }
 
 b,
 strong {
@@ -40,8 +47,9 @@ code,
 kbd,
 samp {
   font-family: LibreFranklin, sans-serif;
+  /* 1 */
   font-size: 1rem;
-  }
+  /* 2 */ }
 
 small {
   font-size: 80%; }
@@ -68,17 +76,22 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
+  /* 1 */
   font-size: 100%;
+  /* 1 */
   line-height: 1.15;
+  /* 1 */
   margin: 0;
-  }
+  /* 2 */ }
 
 button,
 input {
+  /* 1 */
   overflow: visible; }
 
 button,
 select {
+  /* 1 */
   text-transform: none; }
 
 button::-moz-focus-inner,
@@ -88,6 +101,9 @@ button::-moz-focus-inner,
   border-style: none;
   padding: 0; }
 
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -99,12 +115,17 @@ fieldset {
 
 legend {
   box-sizing: border-box;
+  /* 1 */
   color: inherit;
+  /* 2 */
   display: table;
+  /* 1 */
   max-width: 100%;
+  /* 1 */
   padding: 0;
+  /* 3 */
   white-space: normal;
-  }
+  /* 1 */ }
 
 progress {
   vertical-align: baseline; }
@@ -115,8 +136,9 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
+  /* 1 */
   padding: 0;
-  }
+  /* 2 */ }
 
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
@@ -127,8 +149,7 @@ textarea {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-  font: inherit;
-  }
+  font: inherit; }
 
 details {
   display: block; }
@@ -146,6 +167,40 @@ body {
   font-family: LibreFranklin, sans-serif;
   font-size: 1rem; }
 
+/*------------------------------------*\
+* CONTAINER
+\*------------------------------------*/
+/*------------------------------------*\
+* COLUMNS
+\*------------------------------------*/
+/*------------------------------------*\
+* BREAKPOINTS
+\*------------------------------------*/
+/**
+* BREAKPOINT MIXINGS
+*/
+/**
+* SMALL (XS)
+*/
+/**
+* SMALL (SM)
+*/
+/**
+* MEDIUM (MD)
+*/
+/**
+* LARGE (LG)
+*/
+/**
+* GENERATE GRID CLASSES
+*
+* Description: This mixing is called to generate all the column, offsets, ordering or hidding classes.
+*
+* @param {string} $breakpoint - This is a string parameter with our breakpoint value ('xm', 'sm', 'ms', 'lg').
+* @param {boolean} $offset - It will generate the offset classes just if you pass a true value.
+* @param {boolean} $ordering - It will generate the ordering classes just if you pass a true value.
+* @param {boolean} $hidding - It will generate the hidding classes just if you pass a true value.
+*/
 *, ::after, ::before {
   box-sizing: border-box; }
 
@@ -155,9 +210,7 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: wrap; 
-  background-color: #1C1C1C;
-  border: 0.5rem solid #D9D9D9;}
+  flex-wrap: wrap; }
 
 .row.no-gutter [class*=col] {
   padding: 0; }
@@ -171,10 +224,14 @@ body {
 .col {
   flex-shrink: 1;
   flex-basis: 0;
-  flex-grow: 1; 
-  background-color: #1C1C1C;
-  border: 0.5rem solid #D9D9D9;}
+  flex-grow: 1; }
 
+/**
+* EXTRA SMALL (XS)
+*/
+/*------------------------------------*\
+    # COLUMNS
+    \*------------------------------------*/
 .col-xs-1 {
   width: 8.33333%; }
 
@@ -211,6 +268,9 @@ body {
 .col-xs-12 {
   width: 100%; }
 
+/*------------------------------------*\
+    # OFFSET COLUMNS
+    \*------------------------------------*/
 .col-xs-offset-1 {
   margin-left: 8.33333%; }
 
@@ -247,6 +307,15 @@ body {
 .col-xs-offset-12 {
   margin-left: 100%; }
 
+/*------------------------------------*\
+    # ORDERING
+    \*------------------------------------*/
+/*------------------------------------*\
+    # HIDDING ELEMENTS
+    \*------------------------------------*/
+/**
+* SMALL (SM), MEDIUM (MD), LARGE (LG)
+*/
 @media (min-width: 769px) {
   /*------------------------------------*\
     # COLUMNS
@@ -275,6 +344,9 @@ body {
     width: 91.66667%; }
   .col-sm-12 {
     width: 100%; }
+  /*------------------------------------*\
+    # OFFSET COLUMNS
+    \*------------------------------------*/
   .col-sm-offset-1 {
     margin-left: 8.33333%; }
   .col-sm-offset-2 {
@@ -299,10 +371,17 @@ body {
     margin-left: 91.66667%; }
   .col-sm-offset-12 {
     margin-left: 100%; }
-    }
+  /*------------------------------------*\
+    # ORDERING
+    \*------------------------------------*/
+  /*------------------------------------*\
+    # HIDDING ELEMENTS
+    \*------------------------------------*/ }
 
 @media (min-width: 992px) {
-  
+  /*------------------------------------*\
+    # COLUMNS
+    \*------------------------------------*/
   .col-md-1 {
     width: 8.33333%; }
   .col-md-2 {
@@ -354,9 +433,17 @@ body {
     margin-left: 91.66667%; }
   .col-md-offset-12 {
     margin-left: 100%; }
-  }
+  /*------------------------------------*\
+    # ORDERING
+    \*------------------------------------*/
+  /*------------------------------------*\
+    # HIDDING ELEMENTS
+    \*------------------------------------*/ }
 
 @media (min-width: 1200px) {
+  /*------------------------------------*\
+    # COLUMNS
+    \*------------------------------------*/
   .col-lg-1 {
     width: 8.33333%; }
   .col-lg-2 {
@@ -381,7 +468,9 @@ body {
     width: 91.66667%; }
   .col-lg-12 {
     width: 100%; }
-  
+  /*------------------------------------*\
+    # OFFSET COLUMNS
+    \*------------------------------------*/
   .col-lg-offset-1 {
     margin-left: 8.33333%; }
   .col-lg-offset-2 {
@@ -406,21 +495,23 @@ body {
     margin-left: 91.66667%; }
   .col-lg-offset-12 {
     margin-left: 100%; }
-    }
+  /*------------------------------------*\
+    # ORDERING
+    \*------------------------------------*/
+  /*------------------------------------*\
+    # HIDDING ELEMENTS
+    \*------------------------------------*/ }
 
 body {
   font-family: LibreFranklin, sans-serif;
   padding-bottom: 4rem;
   font-weight: lighter;
-  color: #D9D9D9;
+  color: #3a3a3a;
   min-height: 100vh;
-  font-size: 0.8rem; 
-  background-color: #1C1C1C;}
+  font-size: 0.8rem; }
   body [class^="col"] {
     text-align: center;
-    color: #D9D9D9; 
-    background-color: #1C1C1C;
-    border-color: #D9D9D9;}
+    color: #D9D9D9; }
     body [class^="col"]:nth-child(odd) {
       background-color: #1C1C1C; }
     body [class^="col"]:nth-child(even) {
@@ -429,9 +520,7 @@ body {
     margin: 1rem 0; }
 
 .container {
-  padding: 0 0.5rem; 
-  background-color: #1C1C1C;
-}
+  padding: 0 0.5rem; }
 
 .heading__container {
   border-bottom: 1px solid #D9D9D9;
@@ -460,4 +549,3 @@ body {
   font-weight: lighter;
   font-size: 1.2rem;
   margin: 2rem 0; }
-}
