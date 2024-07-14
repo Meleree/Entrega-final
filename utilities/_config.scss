@@ -1,0 +1,15 @@
+//
+// Variables:
+// Use @function map-fetch($map, $keys)
+
+$grid: (
+	col-qty: 4,
+	normal: (
+		gutter: 1.25rem,
+		width: 4rem
+	),
+	large: (
+		gutter: 1.25rem,
+		width: 4rem
+	) 
+);

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center; }
+
+.header-index {
+  background-image: url(../assets/ropa-negra.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64rem;
+  padding: 1rem;
+  display: flexbox;
+  justify-content: space-between; }
+  .header-index .dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60rem; }
+
+.header-resto {
+  background-color: #1C1C1C;
+  background-size: cover;
+  padding: 1rem;
+  display: flexbox;
+  justify-content: space-between; }
+  .header-resto .dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+
+main {
+  background-color: #1C1C1C;
+}
+.container {
+  background-color: #1C1C1C;
+  color: #d9d9d9;
+  text-align: center;
+}
+.container h1{
+  color: #d9d9d9;
+  text-align: center;
+}
+.col {
+  background-color: #1C1C1C;
+  border: #d9d9d9 solid 1px;
+  color: #d9d9d9;
+  text-align: center;
+}
+.footer-todos {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  padding: 1rem;
+  text-decoration: none;
+  font-family: "LibreFranklin", sans-serif;
+  font-size: .75rem;
+  color: black;
+  text-align: center;
+  background-color: #d9d9d9; }
+
+.foot {
+  text-decoration: none;
+  color: black; }
+
+.foot a {
+  text-decoration: none;
+  color: black; }
+
+.formControlInput {
+  text-decoration: none;
+  width: 3.125rem;
+  border: 0 solid; }
+
+.form-label {
+  border: 0 solid;
+  text-decoration: none;
+  width: 3.125rem; }

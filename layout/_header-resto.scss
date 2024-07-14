@@ -1,0 +1,13 @@
+.header-resto {
+    background-color: map-get($colores, color-oscuro);
+    background-size: cover;
+    padding: 1rem;
+    display: flexbox;
+    justify-content: space-between;
+    .dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

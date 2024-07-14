@@ -1,0 +1,32 @@
+.footer-todos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    padding: 1rem;
+    text-decoration: none;
+    font-family: "Libre+Franklin", sans-serif;
+    font-size: .75rem; 
+    color: black;
+    text-align: center;
+    background-color: #d9d9d9;
+}
+.foot {
+    text-decoration: none;
+    color: black;
+}
+.foot a {
+    text-decoration: none;
+    color: black;
+}
+.formControlInput {
+    text-decoration: none;
+    width: 3.125rem;
+    border: 0 solid;
+}
+.form-label {
+    border: 0 solid;
+    text-decoration: none;
+    width: 3.125rem;
+}

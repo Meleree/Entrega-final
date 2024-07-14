@@ -1,0 +1,3 @@
+@function calc-container($col-width, $col-qty, $gutter) {
+	@return ($col-width * $col-qty) + $gutter * ($col-qty - 1) + $gutter;
+}

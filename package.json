@@ -1,0 +1,19 @@
+{
+  "name": "grid-system-1d",
+  "version": "1.0.0",
+  "description": "This is a one dimension grid system example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss ./src/scss/index.scss ./build/css/index.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Jose Jesus Ochoa Torres",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.26.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

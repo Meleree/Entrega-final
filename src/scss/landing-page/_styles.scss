@@ -1,0 +1,71 @@
+$black: #1C1C1C;
+$gray-dark: rgb(58, 58, 58);
+$gray: #D9D9D9;
+$gray-light:  rgb(228, 228, 228);
+$white: white;
+
+body {
+    font-family: Libre+Franklin, sans-serif;
+    padding-bottom: 4rem;
+    font-weight: lighter;
+    color: $gray-dark;
+    min-height: 100vh;
+    font-size: 0.8rem;
+
+    [class^="col"] {
+        text-align: center;
+        color: $gray;
+
+        &:nth-child(odd) {
+            background-color: $black;
+        }
+        
+        &:nth-child(even) {
+            background-color: $gray-dark;
+        }
+    }
+
+    .row {
+        margin: 1rem 0;
+    }
+}
+
+.container {
+    padding: 0 0.5rem;
+}
+
+.heading {
+    &__container {
+        border-bottom: 1px solid $gray;
+        background-color: $black;
+        justify-content: center;
+        margin-bottom: 4rem;
+        align-items: center;
+        display: flex;
+    }
+    
+    &__title {
+        background: -webkit-linear-gradient(0.25turn, $black, $gray);
+        background: linear-gradient(0.25turn, $black, $gray);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 72px;
+        margin: 3rem;
+    }
+}
+
+.topic {
+    &__title {
+        text-transform: uppercase;
+        margin-top: 3rem;
+        font-size: 2rem;
+        color: $black;
+    }
+
+    &__subtitle {
+        font-weight: lighter;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+    }
+}

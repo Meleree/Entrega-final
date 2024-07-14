@@ -1,0 +1,16 @@
+.header-index {
+    background-image: url(../assets/ropa-negra.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 64rem;
+    padding: 1rem;
+    display: flexbox;
+    justify-content: space-between;
+    .dropdown {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 60rem;
+    }
+}

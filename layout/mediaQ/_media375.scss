@@ -1,0 +1,21 @@
+@media(max-width:375px){
+    @media(max-width:375px){
+        .container-tienda{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8, auto;
+            grid-template-areas: 
+            "article-1"
+            "article-2"
+            "article-3" 
+            "article-4"
+            "article-5"
+            "article-6"
+            "article-7"
+            "article-8";
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+    }
+}
